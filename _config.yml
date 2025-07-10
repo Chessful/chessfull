@@ -1,9 +1,9 @@
-title: Open Coding 
-description: "Class of 2025"
-owner_name: John Mortensen
+title: Chessfull
+description: chessfull
+owner_name: Kevin Du
 github_username: nighthawkcoders
 github_repo: "portfolio_2025" 
-baseurl: "/portfolio_2025"
+baseurl: "/chessfull"
 future: true
 remote_theme: jekyll/minima
 minima:
