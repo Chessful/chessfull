@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: none
 title: Chessful Homepage
 ---
 
@@ -135,6 +135,19 @@ title: Chessful Homepage
   </style>
 </head>
 <body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Chessful</div>
+    <nav>
+      <ul>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#connect">Connect</a></li>
+        <li><a href="#openings-course">Openings Course</a></li>
+        <li><a href="#bookstore">Bookstore</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero -->
   <section class="hero">
