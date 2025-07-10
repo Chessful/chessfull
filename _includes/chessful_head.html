@@ -1,0 +1,281 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="nav_header">
+        <nav>
+            <ul class="nav_links">
+                <li class="nav_list"><a class="nav_a" href="{{ site.baseurl }}/">Home</a></li>
+                <li class="nav_list"><a class="nav_a" href="{{ site.baseurl }}/interview/login/">Login</a></li>
+                <li class="nav_list"><a class="nav_a" href="{{ site.baseurl }}/PersonalizedSkills/">Learn</a></li>
+                <li class="nav_list"><a class="nav_a" href="{{ site.baseurl }}/interview/">Interview</a></li>
+                <li class="nav_list"><a class="nav_a" href="{{ site.baseurl }}/recommend/">Job Recommendations</a></li>
+                <li class="nav_list"><a class="nav_a" href="{{ site.baseurl }}/FindEmployees/">Find Employees</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+/* Nav Header */
+.nav_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10%;
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav_list {
+  display: inline-block;
+}
+
+.nav_a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav_a:hover {
+  color: #bbbbbb;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #111111, #000000);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #cccccc;
+}
+
+.hero button {
+  background: #6fdd75;
+  color: #000000;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #5cc862;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Featured Games */
+.featured-games {
+  background: #000000;
+  padding: 3rem 2rem;
+}
+
+.game-preview {
+  background: #111111;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #f0f0f0;
+}
+
+.game-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Community */
+.community {
+  background: #000000;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.user-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile {
+  background: #111111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Openings Course */
+.openings-course {
+  background: #000000;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.course-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #111111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Bookstore */
+.bookstore {
+  background: #000000;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.book {
+  background: #111111;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.book button {
+  background: #6fdd75;
+  color: #000000;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.book button:hover {
+  background: #5cc862;
+}
+
+/* Call to Action */
+.cta {
+  background: #000000;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.cta button {
+  background: #6fdd75;
+  color: #000000;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta button:hover {
+  background: #5cc862;
+}
+
+/* Footer */
+footer {
+  background: #000000;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 2px solid #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav_links {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .course-features,
+  .user-profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
