@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: /login
+permalink: /login/
 title: Login Page
 ---
 {% include chessful_head.html %}
