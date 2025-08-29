@@ -1,7 +1,7 @@
 ---
 layout: none
 permalink: /login
-title: Login
+title: Login Page
 ---
 {% include chessful_head.html %}
 
