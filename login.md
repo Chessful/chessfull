@@ -60,9 +60,9 @@ title: Login Page
 <script>
 function login_user() {
     var myHeaders = new Headers();
-    var deployed = "https://dnhs-chess-backend.onrender.com/"
+    var deployed = "https://chessfull-backend-java.onrender.com/"
     var local = "http://localhost:8085/"
-    var fetchURL = deployed;
+    var fetchURL = local;
     myHeaders.append("Content-Type", "application/json");
     // STEP ONE: COLLECT USER INPUT
     var email = document.getElementById("signInEmailInput").value;
@@ -82,7 +82,7 @@ function login_user() {
         redirect: 'follow'
     };
     // STEP TWO: SEND REQUEST TO BACKEND AND GET JWT COOKIE
-    fetch(deployed+"authenticate", requestOptions)
+    fetch(fetchURL+"authenticate", requestOptions)
     .then(response => {
         if (!response.ok) {
             const errorMsg = 'Login error: ' + response.status;
@@ -110,7 +110,7 @@ function login_user() {
         //document.cookie = "email=" + encodeURIComponent(email) + "; path=/";
         localStorage.setItem('jwtToken', result.cookie);
         //window.location.replace("http://127.0.0.1:4200/dnhs-chess/");
-        window.location.href = "https://dnhschess.github.io/dnhs-chess/";
+        window.location.href = "https://chessful.github.io/chessfull/";
     })
     .catch(error => console.error('Error during login:', error));
 }
